@@ -25,7 +25,7 @@ Nesta aula você vai aprender:
 Imagine que você precisa criar uma função que execute a ação `emitir_som` em vários tipos de animais:  
 Cachorro late, Gato mia, Vaca muge…
 
-Sem polimorfismo, você teria que fazer vários `if` ou `switch`.  
+Sem polimorfismo, você teria que fazer vários `if` ou `match`.  
 Com polimorfismo, basta **chamar o método**, e cada objeto se encarrega de responder corretamente.
 
 ---
