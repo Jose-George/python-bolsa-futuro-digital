@@ -9,4 +9,5 @@ class Historico:
         return self._transacoes
 
     def adicionar_transacao(self, transacao):
+        #IMPLEMENTAR
         pass
