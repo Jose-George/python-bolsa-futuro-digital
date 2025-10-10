@@ -3,12 +3,10 @@ class Cliente:
     def __init__(self, endereco):
         self.endereco = endereco
         self.contas = []
-
+        
     def realizar_transacao(self, conta, transacao):
-        #IMPLEMENTAR
-        pass
+        transacao.registrar(conta)
 
     def adicionar_conta(self, conta):
-        #IMPLEMENTAR
-        pass
+        self.contas.append(conta)
 

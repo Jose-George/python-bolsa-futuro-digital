@@ -1,6 +1,6 @@
-from Transacao import Transacao
+from models.Transacao import Transacao
 
-class Deposito(Transacao):
+class Saque(Transacao):
     def __init__(self, valor):
         self._valor = valor
 
@@ -9,7 +9,9 @@ class Deposito(Transacao):
         return self._valor
 
     def registrar(self, conta):
-        sucesso_transacao = conta.depositar(self.valor)
+        sucesso_transacao = conta.sacar(self.valor)
 
         if sucesso_transacao:
             conta.historico.adicionar_transacao(self)
+
+

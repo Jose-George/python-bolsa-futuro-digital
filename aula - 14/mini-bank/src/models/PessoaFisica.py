@@ -1,5 +1,5 @@
 
-from Cliente import Cliente
+from models.Cliente import Cliente
 
 class PessoaFisica(Cliente):
     def __init__(self, nome, data_nascimento, cpf, endereco):

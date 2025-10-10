@@ -1,8 +1,8 @@
 import textwrap
-from ContaCorrente import ContaCorrente
-from PessoaFisica import PessoaFisica
-from Deposito import Deposito
-from Saque import Saque
+from models.ContaCorrente import ContaCorrente
+from models.PessoaFisica import PessoaFisica
+from models.Deposito import Deposito
+from models.Saque import Saque
 
 def menu():
     menu = """\n
@@ -15,7 +15,7 @@ def menu():
     [5]\tNova conta
     [6]\tListar contas
     [7]\tSair
-
+    
     ======================================
 
     => """
@@ -162,7 +162,7 @@ def listar_contas(contas):
 
 
 def main():
-    clientes = []
+    clientes = [] 
     contas = []
 
     while True:
@@ -195,3 +195,6 @@ def main():
 
 
 main()
+
+
+print("=== Obrigado por usar nosso sistema! ===")

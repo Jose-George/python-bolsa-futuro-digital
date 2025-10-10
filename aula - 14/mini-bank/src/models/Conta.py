@@ -1,4 +1,4 @@
-from Historico import Historico
+from models.Historico import Historico
 
 class Conta:
     def __init__(self, numero, cliente):
@@ -33,7 +33,20 @@ class Conta:
         return self._historico
 
     def sacar(self, valor):
-        #IMPLEMENTAR
+        saldo = self.saldo
+        excedeu_saldo = valor > saldo
+
+        if excedeu_saldo:
+            print("\n@@@ Operação falhou! Você não tem saldo suficiente. @@@")
+
+        elif valor > 0:
+            self._saldo -= valor
+            print("\n=== Saque realizado com sucesso! ===")
+            return True
+
+        else:
+            print("\n@@@ Operação falhou! O valor informado é inválido. @@@")
+
         return False
 
     def depositar(self, valor):
