@@ -1,12 +1,12 @@
-from db import Database
+from database import Database
 
 class ClienteRepository:
-    def __init__(self, db: Database):
-        self.db = db
+    def __init__(self, database: Database):
+        self.database = database
 
     def listar_todos(self):
         sql = "SELECT id, nome, email, telefone, criado_em FROM cliente"
-        conn = self.db.get_connection()
+        conn = self.database.get_connection()
         cursor = conn.cursor(dictionary=True)
         cursor.execute(sql)
         resultados = cursor.fetchall()

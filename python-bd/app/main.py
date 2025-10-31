@@ -1,9 +1,9 @@
-from db import Database
+from database import Database
 from cliente_repo import ClienteRepository
 
 def main():
-    db = Database()
-    repo = ClienteRepository(db)
+    database = Database()
+    repo = ClienteRepository(database)
 
     clientes = repo.listar_todos()
     print("=== Clientes cadastrados ===")
