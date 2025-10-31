@@ -170,11 +170,8 @@ if __name__ == "__main__":
 
 ## 🧠 Exercícios práticos (6)
 
-1. **Inserir novo cliente** — usando o método `criar()`
-2. **Atualizar telefone** — altere o número de um cliente existente
-3. **Remover cliente** — escolha um ID e exclua-o
-4. **Buscar por ID** — crie um método `buscar_por_id(id)` que retorna o cliente
-5. **Contar clientes** — crie um método `contar()` que retorna o total de registros
-6. **Desafio bônus** — peça confirmação antes de excluir (`input("Confirma exclusão?")`)
+1. **Buscar por ID** — crie um método `buscar_por_id(id)` que retorna o cliente
+2. **Contar clientes** — crie um método `contar()` que retorna o total de registros
+3. **Desafio bônus** — peça confirmação antes de excluir (`input("Confirma exclusão?")`)
 
 
