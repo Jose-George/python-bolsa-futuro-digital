@@ -1,17 +1,17 @@
-from mysql import connector
+import sqlite3
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
+load_dotenv()  # opcional: carrega DB_PATH do .env
 
-DB_CONFIG = {
-    "host": os.getenv("DB_HOST", "localhost"),
-    "user": os.getenv("DB_USER", "root"),
-    "password": os.getenv("DB_PASS"),
-    "database": os.getenv("DB_NAME", "escola_demo"),
-    "port": int(os.getenv("DB_PORT", 3306))
-}
+DB_PATH = os.getenv("DB_PATH", "escola_demo.db")
 
 class Database:
+
+    def __init__(self, path: str = None):
+        self.path = path or DB_PATH
+
     def get_connection(self):
-        return connector.connect(**DB_CONFIG)
+        conn = sqlite3.connect(self.path, detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES)
+        conn.row_factory = sqlite3.Row
+        return conn
