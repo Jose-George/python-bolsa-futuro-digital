@@ -41,12 +41,12 @@ def main():
         print(f"{c['id']} - {c['nome']} ({c['email']})")
 
     # Inserir novo cliente
-    novo_id = repo.criar("Ana Pereira", "ana.pereira@example.com", "31988887777")
-    print(f"\nNovo cliente criado com ID: {novo_id}")
+    #novo_id = repo.criar("Ana Pereira", "ana.pereira@example.com", "31988887777")
+    #print(f"\nNovo cliente criado com ID: {novo_id}")
 
     # Atualizar por id
-    id_modificado = repo.atualizar_telefone(novo_id, "31988887778")
-    print("\Telefone atualizado:", id_modificado)
+    #id_modificado = repo.atualizar_telefone(novo_id, "31988887778")
+    #print("\Telefone atualizado:", id_modificado)
 
 if __name__ == "__main__":
     main()

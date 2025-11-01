@@ -2,7 +2,7 @@ import sqlite3
 from dotenv import load_dotenv
 import os
 
-load_dotenv()  # opcional: carrega DB_PATH do .env
+load_dotenv()  
 
 DB_PATH = os.getenv("DB_PATH", "escola_demo.db")
 

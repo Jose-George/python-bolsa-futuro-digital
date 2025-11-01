@@ -205,12 +205,10 @@ def listar_clientes():
 
 ## 🧪 Exercícios da Aula 3
 
-1. Quebre propositalmente a senha no `.env` e capture o erro com `try/except`.
-2. Adapte o método `criar()` para usar o padrão `try/finally`.
-3. Crie um método `buscar_por_email(email)` com tratamento de erro.
-4. Implemente a classe `Connection` e use `with` no método `listar_todos()`.
-5. Crie um log simples: grave erros em um arquivo `erros.log`.
-6. Desafio bônus 💥 — combine `try/except` e `with` no mesmo método!
+1. Adapte o método `criar()` para usar o padrão `try/finally`.
+2. Crie um método `buscar_por_email(email)` com tratamento de erro.
+3. Implemente a classe `Connection` e use `with` no método `listar_todos()`.
+4. Desafio bônus 💥 — combine `try/except` e `with` no mesmo método!
 
 ---
 
