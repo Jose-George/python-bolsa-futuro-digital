@@ -42,3 +42,4 @@ if __name__ == "__main__":
 
 # Fecha a conexão
 conn.close()
+
