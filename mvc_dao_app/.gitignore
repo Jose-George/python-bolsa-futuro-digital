@@ -1,0 +1,87 @@
+# ===============================
+#  Python .gitignore padrão
+# ===============================
+
+# Bytecode e cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+.venv.bak/
+
+# Configurações de IDEs e editores
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Logs e arquivos temporários
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Testes e cobertura
+.coverage
+htmlcov/
+.tox/
+.nox/
+.pytest_cache/
+coverage.xml
+nosetests.xml
+test-results/
+
+# Dependências geradas
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+sdist/
+develop-eggs/
+pip-wheel-metadata/
+wheels/
+
+# Bancos de dados locais
+*.db
+*.sqlite3
+*.sqlite
+
+# Arquivos de configuração sensíveis
+.env
+.env.local
+.env.*.local
+
+# Documentação gerada
+_site/
+docs/_build/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints
+
+# Arquivos de cache do mypy / pylint
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+pylint-report.txt
+
+# Arquivos específicos de deploy
+*.manifest
+*.spec
+
+# Arquivos de testes ou sandbox
+sandbox/
+tests/__pycache__/
