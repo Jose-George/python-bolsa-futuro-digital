@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Novo Produto</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      width: 300px;
+    }
+
+    input {
+      width: 100%;
+      padding: 8px;
+      margin-top: 8px;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background: blue;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <h1>Novo Produto</h1>
+
+  <div class="card">
+    <form method="POST">
+      {% csrf_token %}
+
+      <label>Nome:</label>
+      <input type="text" name="nome">
+
+      <label>Preço:</label>
+      <input type="number" step="0.01" name="preco">
+
+      <button type="submit">Cadastrar</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

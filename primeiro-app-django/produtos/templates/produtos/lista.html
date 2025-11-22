@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lista de Produtos</title>
+
+  <style>
+    body {
+      font-family: Arial;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      width: 400px;
+      margin-bottom: 15px;
+    }
+
+    a {
+      background: #4CAF50;
+      padding: 8px 12px;
+      color: white;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Lista de Produtos</h1>
+
+  <a href="/novo/">Cadastrar Produto</a>
+
+  {% for produto in produtos %}
+  <div class="card">
+    <h3>{{ produto.nome }}</h3>
+    <p>Preço: R$ {{ produto.preco }}</p>
+  </div>
+  {% empty %}
+  <p>Nenhum produto cadastrado.</p>
+  {% endfor %}
+
+</body>
+
+</html>

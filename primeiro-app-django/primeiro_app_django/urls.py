@@ -17,8 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from minha_app.views import home
+from produtos.views import listar_produtos, cadastrar_produto
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('home/', home),
+    path('', listar_produtos, name='listar_produtos'),
+    path('novo/', cadastrar_produto, name='cadastrar_produto'),
 ]
+
