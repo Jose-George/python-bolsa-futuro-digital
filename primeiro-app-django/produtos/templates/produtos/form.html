@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Novo Produto</title>
+  <title>{% if editar %}Editar Produto{% else %}Novo Produto{% endif %}</title>
 
   <style>
     body {
@@ -39,20 +39,30 @@
 
 <body>
 
-  <h1>Novo Produto</h1>
+  <h1>{% if editar %}Editar Produto{% else %}Novo Produto{% endif %}</h1>
 
   <div class="card">
+    {% if erro %}
+      <div style="background: #ffebee; color: #c62828; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+        {{ erro }}
+      </div>
+    {% endif %}
+
     <form method="POST">
       {% csrf_token %}
 
       <label>Nome:</label>
-      <input type="text" name="nome">
+      <input type="text" name="nome" value="{% if produto %}{{ produto.nome }}{% endif %}" required>
 
       <label>Preço:</label>
-      <input type="number" step="0.01" name="preco">
+      <input type="number" step="0.01" name="preco" value="{% if produto %}{{ produto.preco }}{% endif %}" required>
 
-      <button type="submit">Cadastrar</button>
+      <button type="submit">{% if editar %}Salvar Alterações{% else %}Cadastrar{% endif %}</button>
     </form>
+    
+    <a href="{% url 'listar_produtos' %}" style="display: inline-block; margin-top: 10px; text-decoration: none; color: #666;">
+      ← Voltar para lista
+    </a>
   </div>
 
 </body>

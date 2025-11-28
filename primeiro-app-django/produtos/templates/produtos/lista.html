@@ -39,10 +39,16 @@
     <h3>{{ produto.nome }}</h3>
     <p>Preço: R$ {{ produto.preco }}</p>
 
-    <a href="{% url 'excluir_produto' produto.id %}"
-      style="background: red; padding: 6px 10px; color: white; border-radius: 5px;">
-      Excluir
-    </a>
+    <div style="margin-top: 10px;">
+      <a href="{% url 'editar_produto' produto.id %}"
+        style="background: #2196F3; padding: 6px 10px; color: white; border-radius: 5px; text-decoration: none; margin-right: 10px;">
+        Editar
+      </a>
+      <a href="{% url 'excluir_produto' produto.id %}"
+        style="background: red; padding: 6px 10px; color: white; border-radius: 5px; text-decoration: none;">
+        Excluir
+      </a>
+    </div>
   </div>
   {% endfor %}
 
