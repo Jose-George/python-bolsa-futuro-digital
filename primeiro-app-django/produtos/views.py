@@ -14,3 +14,8 @@ def cadastrar_produto(request):
         return redirect('listar_produtos')
 
     return render(request, 'produtos/form.html')
+
+def excluir_produto(request, id):
+    produto = Produto.objects.get(id=id)
+    produto.delete()
+    return redirect('listar_produtos')

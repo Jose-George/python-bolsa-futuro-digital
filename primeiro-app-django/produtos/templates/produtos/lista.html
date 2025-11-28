@@ -32,16 +32,20 @@
 
   <h1>Lista de Produtos</h1>
 
-  <a href="/novo/">Cadastrar Produto</a>
+  <a href="{% url 'cadastrar_produto' %}">Cadastrar Produto</a>
 
   {% for produto in produtos %}
   <div class="card">
     <h3>{{ produto.nome }}</h3>
     <p>Preço: R$ {{ produto.preco }}</p>
+
+    <a href="{% url 'excluir_produto' produto.id %}"
+      style="background: red; padding: 6px 10px; color: white; border-radius: 5px;">
+      Excluir
+    </a>
   </div>
-  {% empty %}
-  <p>Nenhum produto cadastrado.</p>
   {% endfor %}
+
 
 </body>
 
