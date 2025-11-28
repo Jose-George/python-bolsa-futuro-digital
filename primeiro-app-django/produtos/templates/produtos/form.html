@@ -43,9 +43,9 @@
 
   <div class="card">
     {% if erro %}
-      <div style="background: #ffebee; color: #c62828; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
-        {{ erro }}
-      </div>
+    <div style="background: #ffebee; color: #c62828; padding: 10px; border-radius: 5px; margin-bottom: 15px;">
+      {{ erro }}
+    </div>
     {% endif %}
 
     <form method="POST">
@@ -59,8 +59,9 @@
 
       <button type="submit">{% if editar %}Salvar Alterações{% else %}Cadastrar{% endif %}</button>
     </form>
-    
-    <a href="{% url 'listar_produtos' %}" style="display: inline-block; margin-top: 10px; text-decoration: none; color: #666;">
+
+    <a href="{% url 'listar_produtos' %}"
+      style="display: inline-block; margin-top: 10px; text-decoration: none; color: #666;">
       ← Voltar para lista
     </a>
   </div>
