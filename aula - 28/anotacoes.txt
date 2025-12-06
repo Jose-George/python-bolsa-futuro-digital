@@ -1,0 +1,3 @@
+
+1. Para quem usa Windows - necessário instalar o git bash -> https://git-scm.com/
+2. Se não tiver o vscode instalado, vai precisar instalar -> https://code.visualstudio.com/
