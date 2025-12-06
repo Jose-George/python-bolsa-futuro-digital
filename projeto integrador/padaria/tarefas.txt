@@ -14,7 +14,7 @@
    - Sem camada de segurança (Token/JWT) neste momento
    - Utilizar AbstractUser para personalização do modelo de usuário
 
-📦 Passo 1.1: Configuração do App e Modelo de Usuário
+📦 Passo 1.1: Configuração do App e Modelo de Usuário (BRUNO e LOANA)
    
    ✓ Criar app 'users':
      → python manage.py startapp users
@@ -85,7 +85,7 @@
    - Fornecedores são entidades independentes
    - Não possuem relacionamento obrigatório com outras entidades neste momento
 
-📦 Passo 2.1: Configuração do App e Modelo de Fornecedor
+📦 Passo 2.1: Configuração do App e Modelo de Fornecedor (EDIVAN)
 
    ✓ Criar app 'products' ou 'core':
      → python manage.py startapp products
@@ -109,7 +109,7 @@
 
 ───────────────────────────────────────────────────────────────────────────────
 
-📦 Passo 2.2: Implementação da API REST de Fornecedores (CRUD)
+📦 Passo 2.2: Implementação da API REST de Fornecedores (CRUD) (EDIVAN / MARIA CLARA)
 
    ✓ Criar Serializer:
      → Arquivo: products/serializers.py
@@ -145,7 +145,7 @@
    - Produtos possuem relacionamento com Fornecedores (ForeignKey)
    - Produtos possuem campos de controle de estoque e validade
 
-📦 Passo 3.1: Configuração do Modelo de Produto
+📦 Passo 3.1: Configuração do Modelo de Produto (LARA e LILLYA)
 
    ✓ Criar modelo Product:
      → Arquivo: products/models.py (mesmo app de Supplier)
@@ -164,7 +164,7 @@
 
 ───────────────────────────────────────────────────────────────────────────────
 
-📦 Passo 3.2: Implementação da API REST de Produtos (CRUD)
+📦 Passo 3.2: Implementação da API REST de Produtos (CRUD) (LARA e LILLYA)
 
    ✓ Criar Serializer:
      → Arquivo: products/serializers.py
@@ -228,7 +228,7 @@
 
 ───────────────────────────────────────────────────────────────────────────────
 
-📦 Passo 4.2: Implementação de Filtros na ViewSet
+📦 Passo 4.2: Implementação de Filtros na ViewSet (LARA e LILLYA)
 
    ✓ Configurar filtros:
      → Arquivo: products/views.py
@@ -266,7 +266,7 @@
    - Adicionar mensagens de erro personalizadas
    - Melhorar tratamento de erros
 
-📦 Passo 5.1: Validações no ProductSerializer
+📦 Passo 5.1: Validações no ProductSerializer (LARA e LILLYA)
 
    ✓ Validar quantidade mínima:
      → Garantir que qtd_atual >= 0
