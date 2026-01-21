@@ -1,0 +1,7 @@
+APScheduler==3.11.2
+asgiref==3.11.0
+Django==6.0.1
+django-apscheduler==0.7.0
+djangorestframework==3.16.1
+sqlparse==0.5.5
+tzlocal==5.3.1
